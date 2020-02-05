@@ -11,3 +11,24 @@ We have created some helper routes on the api to do this process without the fro
 1. Go to /documentation and scroll to the 'Auth' section
 2. Expand `/auth/login` and follow the implementation notes. (Open the response text url in a new tab and log in).
 3. After you login you will be redirected to a page with an access token. Paste the access token on screen in the `api_key` box on the `/documentation` page.
+
+## CI/CD with GitLab
+
+Import the repository from GitHub into GitLab
+
+Go to gitlab > [repo] > Settings > Repository > Mirroring repositories
+
+set the direction to 'Pull'
+
+enter the *git* url of the repo you want to pull, ex: https://github.com/GazeDev/groups_api.git
+
+select the user you want to pull as, and enter the remote system password for that user (in this case, github password).
+
+Check 'Trigger pipelines for mirror updates' so that CI is run.
+
+At the very least some environment variables will probably need to be added.
+
+Go to gitlab > [repo] > Settings > CI/CD > Variables
+
+Separate testing api keys and accounts should be set up for testing, and api keys
+and account passwords should be set to 'Masked' in the gitlab variables UI
