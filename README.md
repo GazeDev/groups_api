@@ -75,3 +75,7 @@ To start the server, run the Installation/Docker Commands, primarily
 `docker-compose up api`
 
 The docs should now be available at http://localhost:23086/documentation
+
+## More In Depth Written Docs
+
+In this repo there is a `docs` folder which contains further documentation. See [Docs](docs/index.md)
