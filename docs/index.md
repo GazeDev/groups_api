@@ -16,6 +16,19 @@ We have created some helper routes on the api to do this process without the fro
 
 Import the repository from GitHub into GitLab
 
+### Set up GitLab's Github Integration
+
+This integration makes it so Github can see Gitlab's status checks
+
+Go to gitlab > [repo] > settings > integrations > github
+
+Create a personal access token from github, or copy it from another gitlab repo
+that is already configured with a github integration.
+
+### Set up GitLab's repository mirroring
+
+This mirroring makes sure Gitlab gets updates that are made on Github
+
 Go to gitlab > [repo] > Settings > Repository > Mirroring repositories
 
 set the direction to 'Pull'
